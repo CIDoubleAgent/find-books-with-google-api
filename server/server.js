@@ -39,5 +39,5 @@ app.use(routes);
 
 db.once('open', () => {
   startApolloServer(typeDefs, resolvers);
-  // app.listen(PORT, () => console.log(`🌍 Now listening on localhost:${PORT}`));
+  app.listen(PORT, () => console.log(`🌍 Now listening on localhost:${PORT}`));
 });
